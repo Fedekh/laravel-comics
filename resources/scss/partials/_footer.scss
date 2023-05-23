@@ -1,0 +1,21 @@
+footer {
+    background-color: #151414;
+    position: relative;
+    ul {
+        li {
+
+            cursor: pointer;
+        }
+    }
+
+    .logo-footer {
+        position: absolute;
+        top: -34px;
+        right: 0;
+        img {
+            width: 65%;
+            display: block;
+            z-index: 0;
+        }
+    }
+}

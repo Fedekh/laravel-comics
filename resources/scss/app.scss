@@ -1,0 +1,24 @@
+@use './partials/_card' as *;
+@use './partials/_cta' as *;
+@use './partials/_footer' as *;
+
+@import '~bootstrap/scss/bootstrap';
+
+
+body{
+    background-color: #464545;
+}
+
+
+.header {
+    height: 100px;
+
+    .jumbotron {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+
+
+
