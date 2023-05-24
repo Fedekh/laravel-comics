@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $comics = config('db.comics');
-    return view('home', compact('comics'));
+    return view('home');
 });
+    
 
 Route::get('/comics', function () {
-    $comics = config('db.comics');
-    return view('comics', compact('comics'));
+    $comics = config('db.comics');  //config serve per richiamare il file db.php, ovvero il file che contiene l'array con i dati dei fumetti
+    return view('comics', compact('comics')); //al posto di compact('comics') si può scrivere ['comics' => $comics]
 });
 
 Route::get('/shop', function () {
